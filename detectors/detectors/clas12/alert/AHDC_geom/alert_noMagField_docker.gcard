@@ -1,0 +1,35 @@
+<gcard>
+
+	<!-- Implementation alert detector, example -->
+	<!--detector name="/jlab/work/myworkGemcDocker/AHDC_ATOF_GeomFromReco_GEMC/AHDC_geom/ahdc" factory="TEXT" variation="default"/-->
+	<!--detector name="/jlab/work/myworkGemcDocker/AHDC_ATOF_GeomFromReco_GEMC/ATOF_geom/myatof" factory="TEXT" variation="default"/-->
+	<detector name="experiments/clas12/alert/myatof" factory="TEXT" variation="default"/>
+        <detector name="experiments/clas12/alert/ahdc" factory="TEXT" variation="default"/>
+
+	
+	<!-- you can scale the fields here. Remember torus -1 means e- INBENDING -->
+        <option name="SCALE_FIELD" value="TorusSymmetric, -1"/>
+        <option name="SCALE_FIELD" value="clas12-newSolenoid, -1"/> 
+
+        <!-- hall field -->
+        <option name="HALL_FIELD"  value="clas12-newSolenoid"/>
+
+        <!-- fields, precise mode -->
+        <option name="FIELD_PROPERTIES" value="TorusSymmetric,     2*mm, G4ClassicalRK4, linear"/>
+        <option name="FIELD_PROPERTIES" value="clas12-newSolenoid, 1*mm, G4ClassicalRK4, linear"/> 
+
+	 <option name="PHYSICS" value="STD + FTFP_BERT"/>
+        <option name="SAVE_ALL_MOTHERS" value="0"/>
+
+        <option name="BEAM_P" value="e-, 10.0*GeV, 20*deg, 20*deg"/>
+        <option name="SPREAD_P" value="2.0*GeV, 20*deg, 180*deg, flat"/>
+
+        <option name="BEAM_V" value="(0, 0, -2.0)cm"/>
+        <option name="SPREAD_V" value="(0.0, 0.0)cm"/>
+
+	<option name="OUTPUT" value="ev, alert_atof_ahdc.ev"/>
+	<option name="N" value="50"/>
+
+
+
+</gcard>
