@@ -1,0 +1,33 @@
+<gcard>
+	<!-- target. Notice variation give the target type. Can be: lH2, lD2, ND3 -->
+	<detector name="experiments/clas12/targets/target" factory="TEXT" variation="bonus"/>
+
+	<!--radiator-->
+	<!--detector name="experiments/clas12/radiator/radiator" factory="TEXT" variation="original"/-->
+	<!-- central detectors 	-->
+	<detector name="experiments/clas12/rtpc/rtpc"             factory="TEXT" variation="original"/>
+	<!--detector name="experiments/clas12/photon/photon" factory="TEXT"  variation="original"/-->
+	<!--detector name="experiments/clas12/calo/calo" factory="TEXT"  variation="original"/-->
+
+	<!-- beam conditions -->
+	<option name="BEAM_P"   value="e-, 0.120*GeV, 0.0*deg, 0*deg"/>
+	<option name="BEAM_V"    value="(0, 0, -37)cm"/>
+	<option name="SPREAD_V"  value="(0.0,0)cm"/>
+	<option name="RECORD_PASSBY" value="0"/>
+	
+	<!--option name="PHYSICS" value="FTFP_BERT + STD + Optical"/-->
+	<!--option name="OUTPUT"   value="evio, Nine_Percent_with_Coll.ev"/-->
+	<option name="OUTPUT"   value="evio, PID_Test.ev"/>
+
+
+
+	<!--  Will print message every 10 events -->
+	<option name="PRINT_EVENT"    value="100000" />
+	
+	<!--  Do not track staff after the apex -->
+	<option name="MAX_Z_POS" value="8000"/>
+
+	<detector name="target">    <position x="0.12*cm"  y="0.11*cm"  z="3.00*cm"  />  </detector>
+
+	
+</gcard>
