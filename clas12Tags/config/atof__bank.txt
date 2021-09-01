@@ -1,0 +1,8 @@
+                flux  |              bankid  |                                      flux bank ID  | 1700   |                  Di  
+                flux  |                 pid  |                                               pid  |    1   |                  Di  
+                flux  |                Time  |                                         Time [ns]  |    5   |                  Dd  
+                flux  |                 ADC  |                                               ADC  |    6   |                  Dd  
+                flux  |                 Ped  |                                          Pedestal  |    7   |                  Dd  
+                flux  |           TimeShift  |                                   Time Shift [ns]  |    8   |                  Dd  
+                flux  |                  pz  |                                                pz  |   16   |                  Md  
+                flux  |                hitn  |                                        hit number  |   99   |                  Di  
